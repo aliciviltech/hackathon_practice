@@ -8,7 +8,7 @@ interface ProductType {
     title: string,
     imageURL: string
 }
-const page = () => {
+const Page = () => {
     const [targetProduct, setTargetProduct] = useState<ProductType>();
     const param = useParams()
     const { id } = param;
@@ -49,4 +49,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page
