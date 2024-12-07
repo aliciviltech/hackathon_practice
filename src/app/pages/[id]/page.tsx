@@ -15,7 +15,7 @@ const Page = () => {
 
     useEffect(() => {
         const renderProduct = () => {
-            const selectedProduct = productsData.find((product, index) => {
+            const selectedProduct = productsData.find((product) => {
                 return product.id === Number(id);
             })
             setTargetProduct(selectedProduct)

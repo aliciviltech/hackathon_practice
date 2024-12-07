@@ -9,7 +9,7 @@ const Page = () => {
     {
       productsData.map((product)=>{
         return(
-          <Link href={`/pages/${product.id}`}> <div className="productCard w-[300px] h-[400px] " key={product.id}>
+          <Link href={`/pages/${product.id}`} key={product.id}> <div className="productCard w-[300px] h-[400px] " >
             <div className="image h-[300px]"><img className='w-[100%] h-[100%] object-cover' src={product.imageURL}/></div>
             <div className="title">{product.title}</div>
           </div>
